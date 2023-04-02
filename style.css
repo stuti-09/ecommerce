@@ -96,6 +96,12 @@ body {
   transition: 0.5s ease;
 
 }
+#mobile{
+  display: none;
+}
+#close{
+  display: none;
+}
 #home{
   background-image: url("images/img/hero4.png");
   height: 90vh;
@@ -160,6 +166,9 @@ body {
 #product{
   text-align: center;
   
+}
+#product p{
+  color:black
 }
 .pro-container{
   margin-top: 40px;
@@ -283,7 +292,7 @@ body {
 }
 #twobanner{
 display: grid;
-grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 gap:150px;
 height:100%;
 }
@@ -329,7 +338,7 @@ height:100%;
 }
 #threebanner{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap:50px;
   padding:0 80px;
 
@@ -339,7 +348,7 @@ height:100%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-width: 300px;
+  
   height:30vh;
   background-size:cover;
     background-position: center;
@@ -388,7 +397,7 @@ height:100%;
 }
 #newsletter .form{
   display:flex;
-  width:30%;
+  width:40%;
 }
 #newsletter button{
   background-color: #088178;
@@ -457,4 +466,93 @@ footer .follow i:hover, footer a:hover{
   color:black;
   text-align: center;
   width:100%;
+}
+
+@media (max-width:799px){
+  .navbar{
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position:fixed;
+        top:0;
+        right:-300px;
+        height:100vh;
+        width:300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition:0.3s;
+  }
+  .navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile{
+    display:flex;
+    align-items: center;
+  }
+  #mobile i{
+    color:#1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+}
+.navbar.active{
+  right:0px;
+}
+#close{
+  position: absolute;
+  display: initial;
+  top:30px;
+  left:30px;
+  color:#222;
+}
+#lg-bag{
+  display:none;
+}
+#home{
+  height: 70vh;
+  padding: 0 80px;
+  background-position: top 30% right 30%;
+}
+.section-p1 {
+  padding: 40px 25px;
+}
+#newsletter{
+  display: block;
+}
+#newsletter .form {
+  
+  width: 80%;
+}
+footer{
+  padding:0 5px;
+}
+}
+@media(max-width: 477px){
+  
+  #header {
+    padding: 10px 30px;
+}
+#home {
+  padding: 0 20px;
+  background-position: 55%;
+}
+h2 {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 38px;
+}
+#feature{
+  margin-left: 60px;
+}
+#product{
+  margin-left: 20px;
+}
+footer{
+  display: block;
+  margin-left: 30px;
+}
+
 }
