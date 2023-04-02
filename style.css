@@ -126,3 +126,136 @@ body {
   font-size: 1em;
 
 }
+#feature{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap:50px;
+  
+}
+#feature .fe-box{
+  width:180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.3);
+  border:1px solid #cce7d0;
+  border-radius: 4px;
+  margin:15px 0;
+}
+#feature .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box h6{
+  display: inline-block;
+  margin-top:10px;
+  padding: 9px 8px 6px 8px ;
+  line-height: 1;
+  background-color: #fddde4;
+  color:#088178;
+  border-radius: 4px;
+}
+#product{
+  text-align: center;
+  
+}
+.pro-container{
+  margin-top: 40px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap:60px;
+  justify-content: center;
+  align-items: center;
+}
+#product .pro{
+  width:25%;
+  min-width:280px;
+  padding:10px 12px;
+  border:1px solid #cce7d0;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.05);
+  position: relative;
+}
+#product .pro:hover{
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+#product .pro img{
+  width:100%;
+  border-radius: 20px;
+}
+#product .pro .des{
+  text-align: start;
+  padding: 10px 0;
+}
+#product .pro .des span{
+  color:#606063;
+  font-size: 12px;
+}
+#product .pro .des h5{
+  margin-top: 7px;
+  color:#1a1a1a;
+  font-size: 14px;
+}
+#product .pro .des i{
+  font-size: 12px;
+  color: rgb(243,181,25);
+}
+#product .pro .des h4{
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color:#088178;
+}
+#product .pro .cart{
+  width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner{
+  text-align: center;
+  background-image: url("images/img/banner/b2.jpg");
+  background-size: cover;
+  height: 100%;
+
+}
+#banner h4{
+  padding-top: 40px;
+}
+#banner h2{
+  padding-top: 30px;
+}
+#banner h2 span{
+  color: rgba(241, 17, 17, 0.819);
+}
+#banner h4,h2{
+ 
+  color: white;
+}
+#banner button{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#banner button:hover{
+  
+  color: white;
+  
+  background-color: #3b04b3;
+}
