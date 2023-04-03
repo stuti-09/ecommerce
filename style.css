@@ -292,7 +292,7 @@ body {
 }
 #twobanner{
 display: grid;
-grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 gap:150px;
 height:100%;
 }
@@ -338,7 +338,7 @@ height:100%;
 }
 #threebanner{
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   gap:50px;
   padding:0 80px;
 
@@ -528,7 +528,7 @@ footer{
   padding:0 5px;
 }
 }
-@media(max-width: 477px){
+@media(max-width: 520px){
   
   #header {
     padding: 10px 30px;
@@ -545,14 +545,21 @@ h1 {
   font-size: 38px;
 }
 #feature{
-  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#product{
-  margin-left: 20px;
+.pro-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 footer{
   display: block;
   margin-left: 30px;
 }
+
 
 }
